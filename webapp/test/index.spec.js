@@ -1,5 +1,7 @@
+chai.should();
+
 describe('add', () => {
   it('1 + 1', () => {
-    expect(add(1, 1)).to.be.equal(2);
+    add(1, 1).should.equal(2);
   });
 });
