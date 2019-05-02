@@ -4,6 +4,7 @@
   "description": "Karma sample",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint webapp",
     "test": "karma start"
   },
   "repository": {
