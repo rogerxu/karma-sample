@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # clean
 rm -rf coverage/;
 
