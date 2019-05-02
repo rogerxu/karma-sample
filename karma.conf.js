@@ -40,6 +40,7 @@ module.exports = function (config) {
 
     coverageReporter: {
       dir: '../coverage',
+      includeAllSources: true,
       reporters: [
         // reporters not supporting the `file` property
         { type: 'html', subdir: 'html' },
@@ -49,7 +50,21 @@ module.exports = function (config) {
         { type: 'lcovonly', subdir: '.' },
         { type: 'text' },
         { type: 'text-summary' },
-      ]
+      ],
+      check: {
+        global: {
+          statements: 80,
+          branches: 50,
+          functions: 50,
+          lines: 50
+        },
+        each: {
+          statements: 80,
+          branches: 0,
+          functions: 0,
+          lines: 0
+        }
+      }
     },
 
     // web server port
