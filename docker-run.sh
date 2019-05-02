@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 docker_image_chrome=kondi1/node-chrome:10.15.0;
 docker_image_chromium=weboaks/node-karma-protractor-chrome:alpine-node10;
